@@ -1,0 +1,84 @@
+body {
+  background-color: #f0f1e5;
+}
+.dark-green {
+  background-color: #30402F !important;
+}
+.light-green {
+  background-color: #BCD0B3;
+}
+.text-hide{
+  text-indent:101%;
+  overflow: hidden;
+  white-space:nowrap;
+}
+/* frosted-wrap */
+.header .frosted-wrap {
+  position: relative;
+  height: 256px;
+  text-decoration: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  overflow: hidden;
+}
+/* frosted-wrap的偽元素為'綠'色毛玻璃 */
+.header .frosted-wrap::after {
+  position: absolute;
+  content: '';
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;
+  background-color: rgba(50, 64, 47, 0.8); 
+  /* 當觸發hover，會有'橘'色毛玻璃 */
+  transition: background-color 0.5s 0s ;
+}
+/* 偽元素為'綠'色毛玻璃 之虛擬選擇器*/
+.header .frosted-wrap:hover::after{
+  background-color: rgba(213, 133, 104, 0.8);
+}
+/* 修飾frosted-wrap內的文字 */
+.header .frosted-wrap .frosted-text { 
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 10px;
+  writing-mode: vertical-lr;
+}
+/* 修飾frosted-wrap內的圖片 */
+.header .frosted-wrap .frosted-image {
+  position: absolute;
+  right: -10px;
+  left: -10px;
+  top: -10px;
+  bottom: -10px;
+  z-index: -1;
+}
+/* 修飾section內的圖片 */
+.section-image {
+  min-height: 250px;
+  margin-left:-30px;
+}
+.section .vertical-content {
+  max-height: 420px;
+}
+/* 修飾section內的文字 */
+@media (min-width: 768px) {
+  .writing-md-vertical {
+  writing-mode: vertical-rl;
+  line-height: 2.5;
+  }
+}
+ .item-tag {
+  position: absolute;
+  left: 20px;
+  top: 0;
+  padding: 15px 10px;
+  background-color: #30402F;
+  writing-mode: vertical-lr;
+  color: white;
+  letter-spacing: 5px;
+  line-height: 1.5;
+}

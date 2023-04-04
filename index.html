@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>嶢嶢食行</title>
+    <!-- RWD -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/titleIcon.svg">
+    <!-- Material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container">
+            <!-- menu toggle button -->
+            <button 
+                class="navbar-toggler  border-0 d-md-none" 
+                type="button"
+                data-toggle="collapse" 
+                data-target="#navbarSupportedContent" >
+                <i class="material-icons">menu</i>
+            </button>
+            <!-- brand logo -->
+            <a class="navbar-brand" href="./index.html">
+                <!-- 電腦版 logoIcon加上logo -->
+                <img src="./images/logoIcon.svg" height="40px" class="d-none d-md-inline-block">
+                <img src="./images/logo.png" height="40px" class="d-none d-md-inline-block">
+                <!-- 手機板 logoIcon加上logologo -->
+                <img src="./images/logoIcon.svg" height="28px" class="d-inline-block d-md-none">
+                <img src="./images/logo.png" height="28px" class="d-inline-block d-md-none" >
+            </a>
+            <!-- 購物車 -->
+            <a class="nav-link  order-md-last" style="font-size: 24px;" href="#">
+                <i class="material-icons">shopping_cart</i>
+            </a>
+            <!-- collapse部分 -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首頁 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">品項</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- 
+    Header  !!container不設定高讓圖片撐高它 -->
+    <div class="container">
+      <header class="header">
+            <!-- (背景圖)圖片取代文字 -->
+            <div
+                style="background-image: url(./images/banner-img-1.jpeg); min-height:450px;background-size:cover">
+                <h1 class="text-hide">嶢嶢食行</h1>
+            </div>
+            <!-- 毛玻璃 -->
+            <div class="row justify-content-center ">
+                <div class="col-md-10">
+                    <div class="row ">
+                        <a href="#" class="col-4 frosted-wrap ">
+                            <span class="frosted-text">本日精選</span>
+                            <div class="frosted-image "
+                                style="background-image: url(./images/product-1.jpg);background-size: cover;">
+                            </div>
+                        </a>
+                        <a href="#" class="col-4 frosted-wrap border-start border-1" >
+                            <span class="frosted-text">人氣推薦</span>
+                            <div class="frosted-image "
+                                style="background-image: url(./images/product-7.jpg);background-size: cover;">
+                            </div>
+                        </a>
+                        <a href="#" class="col-4 frosted-wrap border-start border-1" >
+                            <span class="frosted-text">新品上市</span>
+                            <div class="frosted-image "
+                                style="background-image: url(./images/product-5.jpg);background-size: cover;
+                                background-position:center;">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+      </header>
+    </div>
+    <!-- Section -->
+    <section class="section ">
+        <!-- (橫式標語) 在 md 以上隱藏 -->
+        <div class="row justify-content-center d-md-none ">
+            <div class="col-6">
+                <img src="./images/水平標語-為什麼選擇了烹飪.png"  class="my-5 img-fluid">
+            </div>
+        </div>
+        <div class="light-green">
+            <div class="container">
+                <div class="row">
+                    <!-- 合菜圖片 -->
+                    <div class="col-md-6 ">
+                        <div class="h-100 section-image"
+                             style="background-image: url(./images/section-img-1.jpg);
+                             background-position: center;
+                             background-size: cover;">
+                        </div>
+                    </div>
+                    <!-- 垂直的文字內容 -->
+                    <div class="col-md-6 vertical-content d-flex justify-content-end">
+                        <div class="writing-md-vertical  py-5 py-md-7 ">
+                            <p class="mb-0">烹飪就是將食物經過選擇、購買、 洗滌、切割、調配、加工、烹煮。</p>
+                            <p class="mb-0">而在經過殺菌消毒等處理，確保衛生安全，使其美味可口，增加食物的風味。</p>
+                            <p class="mb-0 d-block d-md-none d-lg-block">一個好的料理，色香味與營養俱佳，不但讓人在食用時感到滿足，而且能讓食物的養分更容易被人體吸收。</p>
+                        </div>
+                        <!-- (垂直標語) 在 md 以上會顯示 -->
+                        <div class="d-none d-md-block mt-1 ">
+                            <img src="./images/垂直標語-為什麼選擇了烹飪.png" width="88">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="row justify-content-center d-md-none">
+            <div class="col-6">
+                <img src="./images/水平標語-嶢式理念.png" class="my-5 img-fluid">
+            </div>
+        </div>
+        <div class="light-green">
+            <div class="container">
+                <!-- (反轉) 調換圖片與文字內容的位置 -->
+                <div class="row flex-row-reverse">
+                    <div class="col-md-6 ">
+                        <div class=" h-100 section-image"
+                            style="background-image: url(./images/section-img-2.jpg);
+                             background-position: center ;
+                             background-size: cover;">
+                        </div>
+                    </div>
+                    <!-- 要用 end 標語才會向左遠離甜點圖片 -->
+                    <div class="col-md-6 vertical-content d-flex justify-content-end">
+                        <div class="writing-md-vertical  py-5 py-md-7">
+                            <p class="mb-0">嶢式料理專注於做好每一道料理。</p>
+                            <p class="mb-0">堅持純手工，慢火細熬，職人精神。</p>
+                            <p class="mb-0 d-block d-md-none d-lg-block">用心創造每一道具有靈魂的料理，期許感動每一個不平凡的味蕾。</p>
+                        </div>
+                        <div class="d-none d-md-block ">
+                            <img src="./images/垂直標語-嶢式理念.png" width="88">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="my-5 my-md-9 text-center">
+        <img src="./images/水平標語-想吃美食是不需要理由的.png" class="img-fluid d-md-none" width="256">
+        <img src="./images/垂直標語-想吃美食是不需要理由的.png" class="img-fluid d-none d-md-inline-block" width="130">
+    </section>
+    <!-- Item Card -->
+    <section class="container my-5 my-md-7">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <img src="./images/product-1.jpg" alt="" >
+                    <div class="item-tag">本日精選</div>
+                    <div class="card-body">
+                       <div class="d-flex justify-content-around">
+                            <div class="text-success fs-3">多肉交響曲</div>
+                            <div class="text-success fs-3">NT$ 150</strong></div>
+                        
+                       </div>
+                        <button type="button" class="btn btn-success w-100">加入購物車</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <img src="./images/product-2.jpg" alt="" >
+                    <div class="item-tag">本日精選</div>
+                    <div class="card-body">
+                       <div class="d-flex justify-content-around">
+                            <div class="text-success fs-3">多汁糖心蛋</div>
+                            <div class="text-success fs-3">NT$ 30</strong></div>
+                       </div>
+                        <button type="button" class="btn btn-success w-100">加入購物車</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card position-relative">
+                    <img src="./images/product-3.jpg" alt="" >
+                    <div class="item-tag">本日精選</div>
+                    <div class="card-body">
+                       <div class="d-flex justify-content-around">
+                            <div class="text-success fs-3">卡哇伊銅鑼燒</div>
+                            <div class="text-success fs-3">NT$ 20</strong></div>
+                       </div>
+                        <button type="button" class="btn btn-success w-100">加入購物車</button>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- 訂閱郵件 -->
+    <section class="py-5 dark-green">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex align-items-center justify-content-center ">
+                    <img src="./images/logoIcon.svg" height="40">
+                    <span class="h4 text-white mb-0 mx-3">訂閱你我的美味郵件</span>
+                </div>
+                <div class="col-md-5 d-flex align-items-center justify-content-center ">
+                    <label for="subscription" class="material-icons  text-white me-3">
+                        email
+                    </label>
+                    <input type="email" id="subscription" class="form-control">
+                    <button class="material-icons btn btn-primary btn-sm ms-2">
+                        arrow_forward
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="py-4 light-green">
+        <div class="container">
+            <!-- 上半 -->
+            <div class="row justify-content-center">
+                <div class="col-md-5 d-flex flex-column justify-content-between">
+                    <!-- 要用 div 包住不然圖片寬度會跑掉 -->
+                    <div>
+                        <img src="./images/logo.svg" height="27">
+                    </div>
+                    <ul class="list-unstyled mt-5 ">
+                        <li>03-1234-5678</li>
+                        <li><a href="#">goodfood@email.com</a></li>
+                        <li>300新竹市東區</li>
+                    </ul>
+                </div>
+                <div class="col-md-5 d-none d-md-block text-right">
+                    <img src="./images/享受美食用心生活.png" width="60">
+                </div>
+            </div>
+            <!-- 下半 -->
+            <div class="row mt-4 justify-content-center">
+                <div class="col-md-5 mt-2">
+                    <img src="./images/ic-line@.svg" height="32" width="32">
+                    <img src="./images/ic-facebook.svg" height="32" width="32">
+                </div>
+                <div class="col-md-5 text-md-right mt-2">
+                    <span >© 2022 goodfood* All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <!-- Custom JS -->
+    <script src="./js/all.js"></script>
+</body>
+</html>
